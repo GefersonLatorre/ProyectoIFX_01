@@ -1,0 +1,13 @@
+<table class="table table-hover">
+    <i style="margin: 15px;" class="fas fa-undo-alt fa-lg text-warning" (click)="viewPanelsE.emit(false)"></i>
+    <tr style="color: white;" *ngFor="let pd of serviceCrudE.list">
+      <td (click)="dataE.emit(pd)">{{pd.Name}}</td>
+      <td (click)="dataE.emit(pd)">{{pd.Cc}}</td>
+      <td (click)="dataE.emit(pd)">{{pd.Email}}</td>
+      <td (click)="dataE.emit(pd)">{{pd.Address}}</td>
+      <td (click)="dataE.emit(pd)">{{pd.Phones}}</td>
+      <td>
+        <i class="far fa-trash-alt fa-lg text-danger" (click)="onDelete(pd.Id)"></i>        
+      </td>
+    </tr>
+  </table>

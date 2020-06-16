@@ -1,0 +1,10 @@
+<table class="table table-hover">
+    <i style="margin: 15px;" class="fas fa-undo-alt fa-lg text-warning" (click)="viewPanelsE.emit(false)"></i>
+    <tr style="color: white;" *ngFor="let pd of serviceCrudE.list">
+      <td>{{pd.Name}}</td>
+      <td>{{pd.Cc}}</td>
+      <td>{{pd.Email}}</td>
+      <td>{{pd.Address}}</td>
+      <td>{{pd.Phones}}</td>
+    </tr>
+  </table>

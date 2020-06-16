@@ -1,0 +1,15 @@
+<table class="table table-hover">
+  <tr style="color: white;" *ngFor="let pd of serviceCrudC.list">
+    <td>
+      <i class="fas fa-user-plus fa-lg text-warning" (click)="viewPanelsC.emit(pd.Id)"></i>
+    </td>
+    <td (click)="dataC.emit(pd)">{{pd.Name}}</td>
+    <td (click)="dataC.emit(pd)">{{pd.Nit}}</td>
+    <td (click)="dataC.emit(pd)">{{pd.Email}}</td>
+    <td (click)="dataC.emit(pd)">{{pd.Address}}</td>
+    <td (click)="dataC.emit(pd)">{{pd.Phones}}</td>
+    <td>
+      <i style="margin-right: 10px;" class="far fa-trash-alt fa-lg text-danger" (click)="onDelete(pd.Id)"></i>
+    </td>
+  </tr>
+</table>
